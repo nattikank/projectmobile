@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="489dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:alpha="0.6"
+        android:background="#ffffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-90dp"
+        android:text="Resgister"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="10dp"
+        android:hint="username"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="10dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/tel"
+        android:drawablePadding="10dp"
+        android:hint="tel"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idcard"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/home"
+        android:drawablePadding="10dp"
+        android:hint="address"
+        android:padding="16dp" />
+    <EditText
+        android:id="@+id/idcard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tel"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/idcard"
+        android:drawablePadding="10dp"
+        android:hint="idcard"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TypeMember : "
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/username"
+        android:layout_alignTop="@+id/type"
+        android:layout_marginRight="-40dp"
+        android:hint="Member" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/type"
+        android:layout_centerHorizontal="true"
+        android:hint="Photographer" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/radius2"
+        android:hint="Register"
+        android:textColorHint="#ffffff"
+        android:textSize="18sp" />
+
+
+
+
+</RelativeLayout>
